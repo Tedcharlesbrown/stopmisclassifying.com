@@ -13,5 +13,5 @@ jobs:
       with:
         server: 70.40.220.70
         username: github@stopmisclassifying.com
-        password: ${{ secrets.stop_misclassifying_ftp_password }}
+        password: ${{ secrets.ftp_password }}
         server-dir: public_html/
