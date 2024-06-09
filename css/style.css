@@ -1,28 +1,123 @@
-/* body {
-  background-color: #202020;
-  color: #fff;
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+	color: #333;
+	line-height: 1.6;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Header Section */
+.header {
+	text-align: center;
+	background-color: #af4c4c;
+	color: white;
+	padding: 20px 0;
+	border-bottom: 3px solid #8e3838;
+}
+
+.header h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+.header h2 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+}
+
+/* Navbar */
+.navbar {
+	width: 100%;
+	background-color: #333;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 17px;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: #8e3838;
+	/* color: black; */
+  text-decoration: none;
+}
+
+/* Main Content */
+p {
+	margin: 20px 0;
+}
+
+.quote {
+	font-style: italic;
+	background-color: #fff;
+	padding: 15px;
+	border-left: 5px solid #af4c4c;
+	margin: 20px 0;
 }
 
 a {
-  color: #00b3ff;
-  
+	color: #af4c4c;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #0096d6;
+	text-decoration: underline;
 }
 
-a:visited {
-  color: #00b3ff;
-} */
-
-/* HOW TO STYLE P WITH CLASS "SOURCE" */
-a.source {
+.source {
+	display: block;
   font-size: 0.8em;
-  color: #999;
+	margin: 10px 0;
 }
 
-p.quote {
-  font-style: italic;
-  font-size: 1.2em;  
+.content h2 {
+	color: #af4c4c;
+	border-bottom: 2px solid #af4c4c;
+	padding-bottom: 5px;
+}
+
+/* Quick Links */
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	background: #fff;
+	margin: 10px 0;
+	padding: 10px;
+	border-left: 5px solid #af4c4c;
+}
+
+ul li a {
+	color: #333;
+}
+
+ul li a:hover {
+	color: #4CAF50;
+}
+
+h3 {
+	color: #af4c4c;
+}
+
+h3 + p {
+	margin-top: 0;
 }
