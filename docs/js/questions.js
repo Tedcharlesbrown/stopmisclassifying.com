@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "q1",
             question: "1. Profit or loss",
-            description: "Can the you <em>(the worker)</em> make a profit or suffer a loss as a result of the work, aside from the money earned from the project?",
+            description: "Can you <em>(the worker)</em> make a profit or suffer a loss as a result of the work, aside from the money earned from the project?",
             hint: "This should involve real economic risk-not just the risk of not getting paid."
         },
         {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "q12",
             question: "12. Full-time work",
-            description: "Must the you <em>(the worker)</em> spend all of their time on your job?",
+            description: "Must you <em>(the worker)</em> spend all of their time on your job?",
             hint: "Independent contractors choose when and where they will work."
         },
         {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "q15",
             question: "15. Reports",
-            description: "Must you <em>(the worker)</em> give you reports accounting for their actions?",
+            description: "Must you <em>(the worker)</em> give the employer reports accounting for their actions?",
             hint: "This may show lack of independence."
         },
         {
