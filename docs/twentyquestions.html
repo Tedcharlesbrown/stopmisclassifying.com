@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/questions.css">
     <title>20 Questions</title>
 </head>
 
@@ -15,195 +16,26 @@
 
     <div class="content">
         <h1>20 point questionare for determining if you are an Independent Contractor</h1>
-        <p>If you answer “Yes” to all of the first four questions, you’re probably
-            dealing with an independent contractor; “Yes” to any of questions 5 through 20 means your worker is probably an
-            employee.</p>
+        <p class="quote">
+            Questions based on the IRS SS-8 Form; Determination of Worker Status for Purposes of Federal Employment Taxes and Department of the Treasury Income Tax Withholding.
+            <a class="source" href="https://www.irs.gov/pub/irs-pdf/fss8.pdf">Internal Revenue Service. SS-8 Form.</a>
+            <a class="source" href="https://www.irs.gov/instructions/iss8">Internal Revenue Service. Instructions for Form SS-8.</a>
+            <a class="source" href="https://www.forbes.com/advisor/business/form-ss-8/">Forbes. What Is Form SS-8? The Ultimate Guide.</a>
+            For more information, please visit any of the following:
+            <a class="source" href="https://www.cohencpa.com/knowledge-center/insights/march-2022/employee-vs-independent-contractor-20-questions-to-help-you-figure-it-out">Cohen & Co. Employee vs. Independent Contractor: 20 Questions to Help You Figure It Out.</a>
+            <a class="source" href="https://www.oregon.gov/oda/shared/Documents/Publications/NaturalResources/20FactorTestforIndependentContractors.pdf">Oregon.gov. IRS 20 Factor Test – Independent Contractor or Employee?
+            </a>
+        </p>
         <form>
-            <div>
-                <p>1. Profit or loss</p>
-                <label for="q1">Can the worker make a profit or suffer a loss as a result of the work, aside from the money earned from the project? (This should involve real economic risk-not just the risk of not getting paid.)</label>
-                <br>
-                <input type="radio" id="q1-yes" name="q1" value="yes">
-                <label for="q1-yes">Yes</label>
-                <input type="radio" id="q1-no" name="q1" value="no">
-                <label for="q1-no">No</label>
-            </div>
-            <div>
-                <p>2. Investment</p>
-                <label for="q2">Does the worker have an investment in the equipment and facilities used to do the work? (The greater the investment, the more likely independent contractor status.)</label>
-                <br>
-                <input type="radio" id="q2-yes" name="q2" value="yes">
-                <label for="q2-yes">Yes</label>
-                <input type="radio" id="q2-no" name="q2" value="no">
-                <label for="q2-no">No</label>
-            </div>
-            <div>
-                <p>3. Works for more than one firm</p>
-                <label for="q3">Does the person work for more than one company at a time? (This tends to indicate independent contractor status, but isn’t conclusive since employees can also work for more than one employer.)</label>
-                <br>
-                <input type="radio" id="q3-yes" name="q3" value="yes">
-                <label for="q3-yes">Yes</label>
-                <input type="radio" id="q3-no" name="q3" value="no">
-                <label for="q3-no">No</label>
-            </div>
-            <div>
-                <p>4. Services offered to the general public</p>
-                <label for="q4">Does the worker offer services to the general public?</label>
-                <br>
-                <input type="radio" id="q4-yes" name="q4" value="yes">
-                <label for="q4-yes">Yes</label>
-                <input type="radio" id="q4-no" name="q4" value="no">
-                <label for="q4-no">No</label>
-            </div>
+            <h2>If you answer "Yes" to all of the first four (4) questions, you may be considered an Independent Contractor.</h2>
+            <div class="questions-container"></div>
+
+            <!-- <h2>If you answer "Yes" to any of the following questions, you are likely an Employee.</h2> -->
+
             <br>
-            <div>
-                <p>5. Instructions</p>
-                <label for="q5">Do you have the right to give the worker instructions about when, where, and how to work? (This shows control over the worker.)</label>
-                <br>
-                <input type="radio" id="q5-yes" name="q5" value="yes">
-                <label for="q5-yes">Yes</label>
-                <input type="radio" id="q5-no" name="q5" value="no">
-                <label for="q5-no">No</label>
-            </div>
-            <div>
-                <p>6. Training</p>
-                <label for="q6">Do you train the worker to do the job in a particular way? (Independent contractors are already trained.)</label>
-                <br>
-                <input type="radio" id="q6-yes" name="q6" value="yes">
-                <label for="q6-yes">Yes</label>
-                <input type="radio" id="q6-no" name="q6" value="no">
-                <label for="q6-no">No</label>
-            </div>
-            <div>
-                <p>7. Integration</p>
-                <label for="q7">Are the worker’s services so important to your business that they have become a necessary part of the business? (This may show that the worker is subject to your control.)</label>
-                <br>
-                <input type="radio" id="q7-yes" name="q7" value="yes">
-                <label for="q7-yes">Yes</label>
-                <input type="radio" id="q7-no" name="q7" value="no">
-                <label for="q7-no">No</label>
-            </div>
-            <div>
-                <p>8. Services rendered personally</p>
-                <label for="q8">Must the worker provide the services personally, as opposed to delegating tasks to someone else? (This indicates that you are interested in the methods employed, and not just the results.)</label>
-                <br>
-                <input type="radio" id="q8-yes" name="q8" value="yes">
-                <label for="q8-yes">Yes</label>
-                <input type="radio" id="q8-no" name="q8" value="no">
-                <label for="q8-no">No</label>
-            </div>
-            <div>
-                <p>9. Hiring assistants</p>
-                <label for="q9">Do you hire, supervise, and pay the worker’s assistants? (Independent contractors hire and pay their own staff.)</label>
-                <br>
-                <input type="radio" id="q9-yes" name="q9" value="yes">
-                <label for="q9-yes">Yes</label>
-                <input type="radio" id="q9-no" name="q9" value="no">
-                <label for="q9-no">No</label>
-            </div>
-            <div>
-                <p>10. Continuing relationship</p>
-                <label for="q10">Is there an ongoing relationship between the worker and yourself? (A relationship can be considered ongoing if services are performed frequently, but irregularly.)</label>
-                <br>
-                <input type="radio" id="q10-yes" name="q10" value="yes">
-                <label for="q10-yes">Yes</label>
-                <input type="radio" id="q10-no" name="q10" value="no">
-                <label for="q10-no">No</label>
-            </div>
-            <div>
-                <p>11. Work hours</p>
-                <label for="q11">Do you set the worker’s hours? (Independent contractors are masters of their own time.)</label>
-                <br>
-                <input type="radio" id="q11-yes" name="q11" value="yes">
-                <label for="q11-yes">Yes</label>
-                <input type="radio" id="q11-no" name="q11" value="no">
-                <label for="q11-no">No</label>
-            </div>
-            <div>
-                <p>12. Full-time work</p>
-                <label for="q12">Must the worker spend all of his or her time on your job? (Independent contractors choose when and where they will work.)</label>
-                <br>
-                <input type="radio" id="q12-yes" name="q12" value="yes">
-                <label for="q12-yes">Yes</label>
-                <input type="radio" id="q12-no" name="q12" value="no">
-                <label for="q12-no">No</label>
-            </div>
-            <div>
-                <p>13. Work done on premises</p>
-                <label for="q13">Must the individual work on your premises, or do you control the route or location where the work must be performed? (Answering no doesn’t by itself mean independent contractor status.)</label>
-                <br>
-                <input type="radio" id="q13-yes" name="q13" value="yes">
-                <label for="q13-yes">Yes</label>
-                <input type="radio" id="q13-no" name="q13" value="no">
-                <label for="q13-no">No</label>
-            </div>
-            <div>
-                <p>14. Sequence</p>
-                <label for="q14">Do you have the right to determine the order in which services are performed? (This shows control over the worker)</label>
-                <br>
-                <input type="radio" id="q14-yes" name="q14" value="yes">
-                <label for="q14-yes">Yes</label>
-                <input type="radio" id="q14-no" name="q14" value="no">
-                <label for="q14-no">No</label>
-            </div>
-            <div>
-                <p>15. Reports</p>
-                <label for="q15">Must the worker give you reports accounting for his or her actions? (This may show lack of independence)</label>
-                <br>
-                <input type="radio" id="q15-yes" name="q15" value="yes">
-                <label for="q15-yes">Yes</label>
-                <input type="radio" id="q15-no" name="q15" value="no">
-                <label for="q15-no">No</label>
-            </div>
-            <div>
-                <p>16. Pay Schedules</p>
-                <label for="q16">Do you pay the worker by hour, week, or month? (Independent contractors are generally paid by the job or commission, although by industry practice, some are paid by the hour.)</label>
-                <br>
-                <input type="radio" id="q16-yes" name="q16" value="yes">
-                <label for="q16-yes">Yes</label>
-                <input type="radio" id="q16-no" name="q16" value="no">
-                <label for="q16-no">No</label>
-            </div>
-            <div>
-                <p>17. Expenses</p>
-                <label for="q17">Do you pay the worker’s business or travel costs? (This tends to show control.)</label>
-                <br>
-                <input type="radio" id="q17-yes" name="q17" value="yes">
-                <label for="q17-yes">Yes</label>
-                <input type="radio" id="q17-no" name="q17" value="no">
-                <label for="q17-no">No</label>
-            </div>
-            <div>
-                <p>18. Tools and materials</p>
-                <label for="q18">Do you provide the worker with equipment, tools, or materials? (Independent contractors generally supply the materials for the job and use their own tools and equipment.)</label>
-                <br>
-                <input type="radio" id="q18-yes" name="q18" value="yes">
-                <label for="q18-yes">Yes</label>
-                <input type="radio" id="q18-no" name="q18" value="no">
-                <label for="q18-no">No</label>
-            </div>
-            <div>
-                <p>19. Right to fire</p>
-                <label for="q19">Can you fire the worker? (An independent contractor can’t be fired without subjecting you to the risk of breach of contract lawsuit.)</label>
-                <br>
-                <input type="radio" id="q19-yes" name="q19" value="yes">
-                <label for="q19-yes">Yes</label>
-                <input type="radio" id="q19-no" name="q19" value="no">
-                <label for="q19-no">No</label>
-            </div>
-            <div>
-                <p>20. Worker’s right to quit</p>
-                <label for="q20">Can the worker quit at any time, without incurring liability? (An independent contractor has a legal obligation to complete the contract.)</label>
-                <br>
-                <input type="radio" id="q20-yes" name="q20" value="yes">
-                <label for="q20-yes">Yes</label>
-                <input type="radio" id="q20-no" name="q20" value="no">
-                <label for="q20-no">No</label>
-            </div>
-            <br>
-            <div>
+            <!-- <div>
                 <button type="submit">Submit</button>
-            </div>
+            </div> -->
         </form>
 
 
@@ -212,7 +44,8 @@
         <!-- https://www.skidmore.edu/dof-vpaa/development/independent-contractor.php
     https://corporate.rfmh.org/accounts_payable/forms/IRS_ChecklistforIndependentContractors.pdf -->
     </div>
-    <script src="../js/nav.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/questions.js"></script>
 </body>
 
 </html>

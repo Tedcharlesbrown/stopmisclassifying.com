@@ -1,0 +1,54 @@
+.question {
+	background: #fff;
+	margin: 10px 0;
+	padding: 10px;
+	border-left: 5px solid #af4c4c;
+}
+
+.hint {
+	/* display: block; */
+	font-size: 0.8em;
+    font-style: italic;
+	/* margin: 10px 0; */
+}
+
+em {
+    color: #af4c4c;
+    font-style: italic;
+}
+
+
+.content h3 {
+	margin-top: 5px;;
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the labels to look like buttons */
+.btn-radio {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: 2px solid #af4c4c;
+    border-radius: 5px;
+    background-color: white;
+    color: #af4c4c;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change the background and color when the radio button is checked */
+input[type="radio"]:checked + .btn-radio {
+    background-color: #af4c4c;
+    color: white;
+}
+
+/* Add a hover effect */
+.btn-radio:hover {
+    background-color: #8e3838;
+    color: white;
+}
