@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: "q19",
             question: "19. Right to fire",
-            description: "Can the employer fire the you <em>(the worker)</em>?",
+            description: "Can the employer fire you <em>(the worker)</em>?",
             hint: "An independent contractor can’t be fired without subjecting you to the risk of breach of contract lawsuit."
         },
         {
