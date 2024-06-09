@@ -1,15 +1,26 @@
 .question {
-	background: #fff;
-	margin: 10px 0;
-	padding: 10px;
-	border-left: 5px solid #af4c4c;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    transition: border-color 0.5s ease;
+    
+}
+
+.question.border-grey {
+    border-left: 5px solid grey;
+}
+
+.question.border-red {
+    border-left: 5px solid #af4c4c;
+}
+
+.question.border-green {
+    border-left: 5px solid #4CAF50;
 }
 
 .hint {
-	/* display: block; */
-	font-size: 0.8em;
+    font-size: 0.8em;
     font-style: italic;
-	/* margin: 10px 0; */
 }
 
 em {
@@ -19,36 +30,63 @@ em {
 
 
 .content h3 {
-	margin-top: 5px;;
+    margin-top: 5px;
+    ;
 }
 
-/* Hide the default radio buttons */
 input[type="radio"] {
     display: none;
 }
 
-/* Style the labels to look like buttons */
 .btn-radio {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
     font-size: 16px;
-    border: 2px solid #af4c4c;
     border-radius: 5px;
     background-color: white;
-    color: #af4c4c;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Change the background and color when the radio button is checked */
-input[type="radio"]:checked + .btn-radio {
+.btn-radio.red {
+    border: 2px solid #af4c4c;
+}
+
+input[type="radio"]:checked+.btn-radio.red {
     background-color: #af4c4c;
     color: white;
 }
 
-/* Add a hover effect */
-.btn-radio:hover {
+.btn-radio.red:hover {
     background-color: #8e3838;
     color: white;
+}
+
+.btn-radio.green {
+    border: 2px solid #4caf50;
+}
+
+.btn-radio.green:hover {
+    background-color: #388E3C;
+    color: white;
+}
+input[type="radio"]:checked+.btn-radio.green {
+    background-color: #4caf50;
+    color: white;
+}
+
+.scorecard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.scorecard .square {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: grey;
+    transition: background-color 0.5s ease;
 }

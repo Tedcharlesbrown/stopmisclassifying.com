@@ -128,10 +128,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const container = document.querySelector('.questions-container');
+    const scorecard = document.querySelector('.scorecard');
 
     questions.forEach((q, index) => {
         const questionDiv = document.createElement('div');
         questionDiv.classList.add('question');
+        questionDiv.classList.add('border-grey'); // Start with grey border
 
         const questionLabel = document.createElement('h3');
         questionLabel.textContent = q.question;
@@ -158,11 +160,27 @@ document.addEventListener("DOMContentLoaded", function () {
             input.id = `${q.id}-${value}`;
             input.name = q.id;
             input.value = value;
+
+            input.addEventListener('change', () => {
+                const square = document.getElementById(`square-${index}`);
+                if (input.checked) {
+                    if (value === 'yes') {
+                        questionDiv.classList.remove('border-grey', 'border-green');
+                        questionDiv.classList.add(index < 4 ? 'border-red' : 'border-green');
+                        square.style.backgroundColor = index < 4 ? '#af4c4c' : '#4CAF50';
+                    } else {
+                        questionDiv.classList.remove('border-grey', 'border-red');
+                        questionDiv.classList.add(index < 4 ? 'border-green' : 'border-red');
+                        square.style.backgroundColor = index < 4 ? '#4CAF50' : '#af4c4c';
+                    }
+                }
+            });
+
             questionDiv.appendChild(input);
 
             const label = document.createElement('label');
             label.setAttribute('for', `${q.id}-${value}`);
-            label.classList.add('btn-radio');
+            label.classList.add('btn-radio', (index < 4 && value === 'yes') || (index >= 4 && value === 'no') ? 'red' : 'green');
             label.textContent = value.charAt(0).toUpperCase() + value.slice(1);
             questionDiv.appendChild(label);
         });
@@ -175,5 +193,11 @@ document.addEventListener("DOMContentLoaded", function () {
             note.textContent = 'If you answer "Yes" to any of the following questions, you are likely an Employee.';
             container.appendChild(note);
         }
+
+        // Create scorecard square
+        const square = document.createElement('div');
+        square.classList.add('square');
+        square.id = `square-${index}`;
+        scorecard.appendChild(square);
     });
 });
